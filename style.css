@@ -113,7 +113,7 @@ html{
     background-size: cover;
     background-attachment: fixed;
     color:#fff;
-    min-height: 500px;
+    /* min-height: 500px; */
     font-family: 'Ubuntu', sans-serif;
     }
 
