@@ -1,102 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Devin Carree Offical Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="style.css" type="text/css" rel="stylesheet">
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale= 1.0">
+        <title>Personal Porfolio #2</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- i Think font awesome is what gives the little sqaure colors in CSS-->
+        <script src="https://kit.fontawesome.com/9ace757507.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    </head>
 
-<!-- HEADER -->
-  <header class="container">
-    <div class="row">
-      <h1 class="col-12-sm-6">
-        <font color=#4B0082>
-        Devin Carree (potential M.D.)
-        </font>
-      </h1>
+    <!--Body Start-->
+    <body>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
 
-<!-- HEADER__NAV -->
-      <nav class="col-auto text-right fixed-top">
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="education.html">Education</a>
-        <a href="expirence.html">Experience</a>
-      </nav>
+        <nav class="navbar">    <!--Navbar Start-->
+            <div class="max-width">
+                <div class="logo"> <a href="#">Porfo<span>lio.</span></a></div>
+                <ul class="menu">
+                    <li><a href="#home" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#education" class="menu-btn">Education</a></li>
+                    <li><a href="#exp" class="menu-btn">Experience</a></li>
+                    <li><a href="#contact" class="menu-btn">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>                     <!--Navbar End-->
+
+        <!--Home section start-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, My name is </div>
+                <div class="text-2"> Devin Carree </div>
+                <div class="text-3">And I am an aspiring <span class="typing"></span></div> 
+                <a href="#contact">Contact Me</a>               
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Start -->     
+     <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content"><div class="column left">
+                <img src="images/grad.jpg" alt="">
+            </div>
+            <div class="column right">
+                <div class="text">I'm an aspiring <span class="typing-2"></span></div>
+                <p>My name is Devin Carree and I am an aspiring surgeon and research physican from the eastside of Detroit, MI. </p>
+                <a href="Imporant-papers/Resume/Resume_Devin-Carree.pdf">Download Resume</a>
+                <a href="Imporant-papers/Resume/CV_Devin-Carree.pdf">Download CV</a>
+            </div>
+            </div>
+        </div>
+    </section>
+        <!-- Education Section Start -->     
+    <section class="education" id="education">
+        <div class="max-width">
+            <h2 class="title">My Education</h2>
+            <div class="education-content">                
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <a href="https://codecademy.com" target="_blank">
+                        <div class="text">Codecademy</div>
+                        </a>
+                        <p>Codecademy is an online interactive platform that offers coding classes in different programming languages including Python, Java, JavaScript, SQL, C++, C#, as well as markup languages HTML and CSS.</p>
+                        <input id="toggle" type="checkbox">
+                        <label for="toggle"> Click to Expand</label>
+                        <div class="expand" id="expand">
+                            <p class="text">Achievements:</p>
+                                <ul class>
+                                    <li>Certificate of Completion</li>
+                                        <ul class="secondary">
+                                            <li>Computer Science</li>
+                                                <ul class="tert">
+                                                    <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Computer_Science/Git_Codecademy.pdf">Learn Git Course</a></li>
+                                                    <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Computer_Science/Command-Line_Codecademy.pdf">Learn the Command Line</a></li>
+                                                    <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Computer_Science/Python-3_Codecademy.pdf">Learn Python 3</a></li>
+                                                    <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Computer_Science/Learn-to-code_Codecademy.pdf">Learn How to Code</a></li>
+                                                </ul>
+                                        </ul>
+                                        <ul class="secondary">
+                                            <li>Data Science</li>
+                                                <ul class="tert">
+                                                    <p class="subject text">Python</p>
+                                                        <ul>
+                                                            <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Data_Science/Master-Statistics-Python_Codecademy.pdf">Mater Statistics w/ Python</a></li>
+                                                            <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Data_Science/Statistics-with-NumPy_Codecademy.pdf">Learn Statistics w/ NumPy</a></li>
+                                                            <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Data_Science/Learn-Statistics-Python_Codecademy.pdf">Learn Statistics w/ Python</a></li>
+                                                        </ul>
+                                                </ul>
+                                                <ul class="tert">
+                                                    <p class="subject text">R</p>
+                                                        <ul>
+                                                            <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Data_Science/Analyze_Data-with-R_Codecademy.pdf">Analyze Data in R</a></li>
+                                                            <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Data_Science/Linear-Regression_Codecademy.pdf">Linear Regression in R</a></li>
+                                                            <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Data_Science/Learn-Statistics-R_Codecademy.pdf">Learn Statistics w/ R</a></li>
+                                                            <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Data_Science/Learn-R_codecademy.pdf">Learn R</li></a>
+                                                        </ul>
+                                                </ul>
+                                                <ul class="tert">
+                                                    <p class="subject text">SQL</p>
+                                                        <ul>
+                                                            <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Data_Science/Learn-SQL_Codecademy.pdf">Learn SQL</li></a>
+                                                        </ul>
+                                                </ul>
+                                        </ul>
+                                        <ul class="secondary">
+                                            <li>Web Development</li>
+                                                <ul class="tert">
+                                                    <li><a href="https://github.com/carreede/carreede.github.io/raw/master/CodeCademy/Web_Dev/HTML_Codecademy.pdf">Learn HTML</a></li>
+                                                </ul>
+                                        </ul>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <a href="https://coursea.com" target="_blank">
+                        <div class="text">Coursera</div>
+                        </a>
+                        <p>Coursera is an American online learning platform founded in 2012 by Stanford professors that offers massive open online courses, specializations, and degrees.</p>
+                        <input id="toggle-2" type="checkbox">
+                        <label for="toggle-2"> Click to Expand</label>
+                        <div class="expand" id="expand">
+                            <p class="text">Achievements:</p>
+                            <ul>
+                                <li>John's Hopkins University:</li>
+                                  <ul class="secondary">
+                                    <li><a href="https://github.com/carreede/carreede.github.io/raw/master/COURSERA/Epidemiology_COURSERA.pdf">Essential Epidemiologic Tools for Public Health Practice</a></li>
+                                    <li><a href="https://github.com/carreede/carreede.github.io/raw/master/COURSERA/neuroimaging_COURSERA.pdf">Fundemental Neuroscience for Neuroimaging</a></li>
+                                  </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-medkit"></i>
+                        <a href="https://lcc.edu" target="_blank">
+                        <div class="text">Lansing Community College</div>
+                        </a>
+                        <p>Lansing Community College is one of the largest community colleges in Michigan. It offers more than 200 associate degree and certificate programs.</p>
+                        <input id="toggle-3" type="checkbox">
+                        <label for="toggle-3"> Click to Expand</label>
+                        <div class="expand" id="expand">
+                            <p class="text">Achievements:</p>
+                            <ul>
+                                <li>Associate's of Science Degree:</li>
+                                  <ul class="secondary">
+                                    <li>Major: Pre-Professional Health</li>
+                                        <ul class="tert">
+                                            <li>3.4 GPA</li>
+                                            <li> Cum Laude </li>
+                                        </ul>
+                                  </ul>
+                            </ul>
+                        </div>
+                    </div>                
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-user-md"></i>
+                        <a href="https://msu.edu" target="_blank">
+                        <div class="text">Michigan State University</div>
+                        </a>
+                        <p>Michigan State University is the nation’s premier land-grant university and one of the top research universities in the world.</p>
+                        <input id="toggle-4" type="checkbox">
+                        <label for="toggle-4"> Click to Expand</label>
+                        <div class="expand" id="expand">
+                            <p class="text">Achievements:</p>
+                            <ul class="main">
+                                <li>Bachelor's of Science Degrees:</li>
+                                  <ul class="secondary">
+                                      <li>Majors:</li>
+                                      <ul class="tert">
+                                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Degrees/Human-Biology.pdf">Human Biology</a></li>
+                                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Degrees/Neuroscience.pdf">Neuroscience</a></li>
+                                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Degrees/genetics.pdf">Genetics & Molecular Genomics</a></li>
+                                    </ul>
+                                    </ul>
+                                    <ul class="secondary">
+                                        <li>Minors:</li>
+                                        <ul class="tert">
+                                            <li>Philosophy</li>
+                                            <li>Cognitive Science</li>
+                                            <li>Plant, Animal and Microbial Biotechnology</li>
+                                        </ul>                                                                        
+                                        <li> 3.04 GPA</li>                                    
+                                    </ul>
+                                        <ul class="secondary">                                            
+                                        <li><a href="#exp">Research</a></li>                   
+                                        <li>Study Abroad</li>
+                                    </ul>
+                            </ul>                                                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
+    </section>
 
-<!-- JUMBOTRON-->
-  <section class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-auto">
-        <h2>
-          Aspiring Neurosurgeon, Biomedical Techonolgist and Philospher
-        </h2>
-        <h3>
-          B.S. Human Biology, Neuroscience and Genomics & Molecular Genetics
-        </h3>
-        <h4>
-          Minors: Cognitive Science, Philosophy and Plant, Animal & Microbial Biotechology
-        </h4>
+    <!-- Experience section start  -->
+    <section class="exp" id="exp">
+        <div class="max-width">
+            <h2 class="title">My Experience</h2>
+            <div class="exp-content">
+                <div class="column left video">                   
+                    <video autoplay controls loop src="images/lab.mp4"></video>
+               </div>
+               <div class="column right">
+                <h3 class="text">Assignments</h3>
+                <h4 class="text">MMG 408: Advanced Microbiology Lab</h4>
+                    <ul>
+                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/adv-micro-lab/Lab-Report-1.pdf">Bacterial Growth and Induction of the LAC Operon in <em>E. COLI</em></a></li>
+                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/adv-micro-lab/Lab-Report-2.pdf">Disruption of Bacterial Genes Using Transposable Elements </a></li>
+                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/adv-micro-lab/Lab-Report-3.pdf">Incorporating Viral DNA into the CRISPR array of S. Thermophilus; Producing Bacteriophage Insensitive Mutants</em></a></li>
+                    </ul>
+                <h4 class="text">NEUL 411L: Neuroscience Lab</h4>
+                    <ul>
+                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/Neuroscience/Full_Manuscript.pdf">The effects of Ashwaganda (WSP) on oxidative damage of drosophila exposed to rotenone, a 
+                        Parkinson’s Disease model.</a></li>
+                    </ul>
+                <h4 class="text">IBIO 445: Evolution</h4>
+                <ul>
+                    <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/Evolution-Paper/Evolution-Final2019.pdf"><em>H. Sapiens</em> Potential for Evolution through microevolutions associated with Autism Spectrum Disorder</a></li>
+                  </ul>
+                <h4 class="text">PHL 463: Metaphysics</h4>
+                    <ul>
+                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/metaphysics/1_Causation.pdf">Causation</a></li>
+                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/metaphysics/2_Causing-and-nothingness.pdf">Causing and Nothingness</a></li>
+                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/metaphysics/3_Human-Freedom-and-self.pdf">Human Freedom and The Self</a></li>
+                        <li><a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/metaphysics/Final_Illusion-of-choice.pdf">Illusion of choice</a></li>
+                    </ul>
+                
+                <h3 class="text">Projects</h3>
+                <h4 class="text">Resesrch: Transcription factor AP2-gamma's role in early embryogenesis and cellular differentiation.</h4>
+                <h5 class="text">Independent Study: Stem-cell Applications in Neuroregenerative Therapies.</h5>
+                    <ul>
+                        <li>
+                          <a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/Research/Stem-Cell_Applications_in_Neuro-regenerative_Therapies.pdf">Report</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/carreede/carreede.github.io/raw/master/Imporant-papers/Research/(Presentation).pdf">Presentation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- COntent -->
-  <section class="container">
-      <div class="row">
-        <div class="col-4 d-flex justify-content-center">
-          <p>Contact Me:<p>
+    <!-- books section start -->
+    <section class="books" id="books">
+        <div class="max-width">
+            <h2 class="title">Books</h2>
+            <div class="carousel owl-carousel">
+                <a target="_blank" href="https://www.amazon.com/Man-Who-Mistook-His-Wife-ebook/dp/B00BBMNEA4/ref=sr_1_1?crid=3FRLG48TZ13MS&dchild=1&keywords=the+man+who+mistook+his+wife+for+a+hat&qid=1613512857&s=digital-text&sprefix=the+man+who+mis%2Cdigital-text%2C-1&sr=1-1">
+                <div class="card">
+                    <div class="box">
+                        <img src="books/man-who-mistook-his-wife-for-a-hat.jpg" alt="">
+                        <div class="text">Man Who Mistook His Wife for a Hat </div>
+                        <p>By: Oliver Sacks</p>
+                    </div>
+                </div>
+                </a>
+                <a target="_blank" href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari-ebook/dp/B00ICN066A">
+                <div class="card">
+                    <div class="box">
+                        <img src="books/evolution-book.jpg" alt="">
+                        <div class="text">Sapiens: A Brief History of Humankind </div>
+                        <p>By: Yuval Noah Harari</p>
+                    </div>
+                </div>
+                </a>
+                <a target="_blank" href="https://www.amazon.com/ORIGIN-SPECIES-Charles-Darwin-ebook/dp/B091WVHJP7/ref=sr_1_1?crid=2R9F03RCVTZS0&dchild=1&keywords=on+the+origin+of+species&qid=1623514403&s=digital-text&sprefix=on+the+ori%2Cdigital-text%2C176&sr=1-1">
+                <div class="card">
+                    <div class="box">
+                        <img src="books/species.jpg" alt="">
+                        <div class="text">On the Origin Of Species </div>
+                        <p>By: Charles Darwin</p>
+                    </div>
+                </div>
+                </a>
+                <a target="_blank" href="https://www.amazon.com/Major-World-Religions-Traditions-Influential-ebook/dp/B01K9AM292">
+                <div class="card">
+                    <div class="box">
+                        <img src="books/religion.jpg" alt="">
+                        <div class="text">12 Major World Religions: The Rituals, Beliefs and Traditions of Humanites Most Influential Faiths</div>
+                        <p>By: Jason Boyett</p>
+                    </div>
+                </div>
+                </a>
+                <a target="_blank" href="https://www.amazon.com/dp/B0080GV276/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1">
+                <div class="card">
+                    <div class="box">
+                        <img src="books/bodybuilding.jpg" alt="">
+                        <div class="text">The New Encyclopedia of Modern Bodybuilding: The Bible of Bodybuilding, Fully Updated and Revised</div>
+                        <p>By; Arnold Schwarzenegger</p>
+                    </div>
+                </div>
+                </a>
+            </div>
         </div>
-        <div class="d-flex justify-content-center col-4">
-          <p><a href="mailto:carreede@msu.edu">carreede@msu.edu</a></p>
-        </div>
-        <div class="col-4 d-flex justify-content-center">
-          <p>313-828-6323</p>
-        </div>
-      </div>
-<br>
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <video autoplay loop controls height="1000-rem">
-          <source src="lab.mp4">Video not supported
-          </video>
-        </div>
-    </div>
-  </section>
+    </section>
+    
+<!-- contact section start  -->
 
-<!-- FOOTER -->
-  <footer class="container">
-    <div class="row">
-      <div class="col-4">
-        <p>&copy; 2021 Devin Carree</p>
-      </div>
-      <div class="col-2">
-      <a href="https://www.facebook.com/DJ.Carree" target="_blank">Facebook</a>
-      </div>
-      <div class="col-2">
-      <a href="https://twitter.com/dcarree_MD" target="_blank">Twitter</a>
-      </div>
-      <div class="col-2">
-      <a href="https://www.linkedin.com/in/devin-carree-11439ba6/" target="_blank">LinkedIn</a>
-      </div>
-      <div class="col-2">
-      <a href="https://github.com/carreede" target="_blank">Github</a>
-      </div>
-    </div>
-  </footer>
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Contact</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolores officiis minus! Odit dolorum deserunt voluptatem laboriosam voluptas totam architecto?</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Devin Carree</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Adress</div>
+                                <div class="sub-title">Detroit, MI</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">carreede@msu.edu</div>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Messege Me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="text" name="email" placeholder="Email" required >
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Subject" required >
+                        </div>
+                        <div class="field textarea">
+                            <textarea name="messege" cols="30" rows="10" placeholder="Messege Me" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit" name="submit">Coming Soon</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  </body>
+    <!-- footer section start  -->
+    <footer>
+        <div class="row">
+            <span>Created By <a href="#">Devin Carree</a> <span class="far fa-copyright"></span> 2021 All rights Reserved</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    </body>
 </html>
