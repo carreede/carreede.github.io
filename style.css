@@ -730,6 +730,9 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 32px;
     }
+    .home{
+        max-width: 500px;
+    }
 }
 
         
