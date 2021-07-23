@@ -113,7 +113,7 @@ html{
     background-size: cover;
     background-attachment: fixed;
     color:#fff;
-    /* min-height: 500px; */
+    min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
     }
 
@@ -195,11 +195,14 @@ section .title::after {
         position: absolute;
         bottom: -12px;
         left: 50%;
-        font-size: 20px;
+        font-size: 18px;
         color: slateblue;
         padding: 5px;
         background:#fff;
-        transform: translateX(-50%);    
+        transform: translateX(-50%);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;    
 }
 
 /* About section styling */
@@ -256,7 +259,7 @@ section .title::after {
 }
 .education .title::after, .books .title::after{
     background: #111;
-    content: "what I've learned";
+    content: "what I've learned";    
 }
 .education .education-content .card{
     width: calc(25% - 20px);
@@ -729,9 +732,6 @@ footer span a:hover{
     }
     .home .home-content .text-3{
         font-size: 32px;
-    }
-    .home{
-        max-width: 500px;
     }
 }
 
