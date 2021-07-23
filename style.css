@@ -259,7 +259,7 @@ section .title::after {
 }
 .education .title::after, .books .title::after{
     background: #111;
-    content: "what I've learned";    
+    content: "what I know";    
 }
 .education .education-content .card{
     width: calc(25% - 20px);
