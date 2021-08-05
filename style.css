@@ -226,6 +226,12 @@ section .title::after {
     font-weight: 600;
     margin-bottom: 10px;
 } 
+.about .about-content .right .text-2{
+    color: slateblue;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+} 
 .about .about-content .right .text span{
     color: slateblue;
 }
